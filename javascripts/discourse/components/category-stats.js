@@ -8,7 +8,7 @@ export default class CategoryStats extends Component {
   postCount = 0;
 
   @action
-  get CategoryPostCount(categoryId){
+  getCategoryPostCount(categoryId){
     //check if Id exists (assumes that categoryId's cannot exceed current map of categories)
     try {
       if (site.categoriesById.size() < categoryId) {
