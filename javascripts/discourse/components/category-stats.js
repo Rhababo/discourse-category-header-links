@@ -1,6 +1,6 @@
 import Component from "@glimmer/component";
 import Service, { inject as service } from "@ember/service";
-import { action } from "@ember/object";
+import { dasherize } from "@ember/string";
 
 export default class CategoryStats extends Component {
   @service site
