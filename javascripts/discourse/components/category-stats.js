@@ -22,6 +22,7 @@ export default class CategoryStats extends Component {
       return false;
     }
     return this.categoryIds.length < categoryId;
+
   }
 
   get links() {
