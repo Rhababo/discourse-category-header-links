@@ -17,6 +17,6 @@ links_position:
 category_ids:
   type: list
   list_type: simple
-  default: [1, 2, 3]
+  default: "1|2|3"
   description:
     en: "Enter the category id number whose stats you would like displayed."
