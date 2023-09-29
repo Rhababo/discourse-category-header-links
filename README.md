@@ -9,3 +9,5 @@ Theme component is provided as-is with no guarantees.
 Derived from: https://github.com/discourse/discourse-custom-header-links
 
 See: https://meta.discourse.org/t/custom-header-links/90588
+
+https://github.com/Rhababo/discourse-category-header-links/blob/master/README.md
