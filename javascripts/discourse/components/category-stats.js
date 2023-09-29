@@ -21,7 +21,7 @@ export default class CategoryStats extends Component {
     if(!Number.isInteger(categoryId)){
       return false;
     }
-    return this.categoryIds.length > categoryId;
+    return this.site.categories.length > categoryId-1;
 
   }
 
