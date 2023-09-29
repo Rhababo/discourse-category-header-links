@@ -13,3 +13,9 @@ links_position:
     - left
   description:
     en: "Note that when links are displayed on the left, they're automatically hidden while scrolling within topics to make room for the title"
+
+category_ids:
+  type: list
+  list_type: simple
+  description:
+    en: "Enter the category id number whose stats you would like displayed."

@@ -3,7 +3,7 @@ import { dasherize } from "@ember/string";
 
 export default class CustomHeaderLinks extends Component {
   get shouldShow() {
-    return settings.Custom_header_links?.length > 0;
+    return settings.category_ids?.length > 0;
   }
 
   get links() {
