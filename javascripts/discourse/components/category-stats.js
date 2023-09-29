@@ -24,21 +24,16 @@ export default class CategoryStats extends Component {
     return this.categoryIds.length < categoryId;
   }
 
-  /*get links() {
+  get links() {
     return this.categoryIds.reduce((result, item) => {
       let [
-        linkText = this.site.categories[item].
-        linkTitle,
-        linkHref,
-        device,
-        target = "",
-        keepOnScroll,
-        locale,
-      ] = item.split(",").map((s) => s.trim());
-
-      if (!linkText || (locale && document.documentElement.lang !== locale)) {
-        return result;
-      }
+        linkText = this.site.categories[item-1].name,
+        linkTitle = this.site.categories[item-1].description_text,
+        linkHref = this.site.categories[item-1].url(),
+        device = "vdo",
+        target = "self",
+        keepOnScroll = "keep",
+      ] = [];
 
       const linkClass = `${dasherize(linkText)}-custom-header-links`; // legacy name
 
@@ -51,7 +46,6 @@ export default class CategoryStats extends Component {
       result.push({
         device: `headerLink--${device}`,
         keepOnScroll: `headerLink--${keepOnScroll}`,
-        locale: `headerLink--${locale}`,
         linkClass,
         anchorAttributes,
         linkText,
@@ -59,7 +53,7 @@ export default class CategoryStats extends Component {
 
       return result;
     }, []);
-  }*/
+  }
 
 
 }
