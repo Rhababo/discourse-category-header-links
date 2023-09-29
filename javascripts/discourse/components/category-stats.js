@@ -5,7 +5,10 @@ import { action } from "@ember/object";
 export default class CategoryStats extends Component {
   @service site
 
-  getCategoryPostCount(categoryId){
+  postCount = 0;
+
+  @action
+  get CategoryPostCount(categoryId){
     //check if Id exists (assumes that categoryId's cannot exceed current map of categories)
     try {
       if (site.categoriesById.size() < categoryId) {
@@ -18,7 +21,8 @@ export default class CategoryStats extends Component {
     console.log(site.cagetoriesById.size());
     console.log(site.categoriesById.get(categoryId));
     console.log(site.categoriesById.get(categoryId.post_count));
-    return site.categoriesById.get(categoryId).post_count;
+    this.postCount = site.categoriesById.get(categoryId).post_count;
+
   }
 
 
