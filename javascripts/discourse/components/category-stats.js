@@ -29,7 +29,7 @@ export default class CategoryStats extends Component {
       let [
         linkText = this.site.categories[item-1].name,
         linkTitle = this.site.categories[item-1].description_text,
-        linkHref = this.site.categories[item-1].url(),
+        linkHref = this.site.categories[item-1].url,
         device = "vdo",
         target = "self",
         keepOnScroll = "keep",
