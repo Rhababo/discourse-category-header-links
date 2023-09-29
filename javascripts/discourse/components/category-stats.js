@@ -18,12 +18,7 @@ export default class CategoryStats extends Component {
     }catch(err) {
         console.log(err);
     }
-    console.log(this.site);
-    console.log(this.categoryId);
-    console.log(this.site.categories[this.categoryId-1]);
-    console.log(this.site.categories[this.categoryId-1].post_count);
     this.postCount = this.site.categories[this.categoryId-1].post_count;
-
   }
 
 
