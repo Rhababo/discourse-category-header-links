@@ -1,7 +1,7 @@
 {
   "name": "discourse-category-stats-header",
   "version": "1.0.0",
-  "repository": "https://github.com/Rhababo/discourse-custom-header-links-main",
+  "repository": "https://github.com/Rhababo/discourse-category-header-links",
   "author": "Discourse",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
