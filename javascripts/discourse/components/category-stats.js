@@ -9,7 +9,7 @@ export default class CategoryStats extends Component {
 
   //code assumes that (category_Id - 1) is equal to their position in the site.categories array
   get shouldShow() {
-    for(let x; x < this.categoryIds.length; x++){
+    for(let x=0; x < this.categoryIds.length; x++){
       if(!this.categoryExists(this.categoryIds[x])){
         return false;
       }
