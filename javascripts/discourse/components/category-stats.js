@@ -12,7 +12,7 @@ export default class CategoryStats extends Component {
   getCategoryPostCount(){
     //check if Id exists (assumes that categoryId's cannot exceed current map of categories)
     try {
-      if (this.site.categoriesById.size < this.categoryId) {
+      if (this.site.categories.length < this.categoryId) {
         throw "category Id does not exist";
       }
     }catch(err) {
@@ -20,10 +20,9 @@ export default class CategoryStats extends Component {
     }
     console.log(this.site);
     console.log(this.categoryId);
-    console.log(this.site.cagetoriesById.size);
-    console.log(this.site.categoriesById.get(this.categoryId));
-    console.log(this.site.categoriesById.get(this.categoryId).post_count);
-    this.postCount = this.site.categoriesById.get(this.categoryId).post_count;
+    console.log(this.site.categories[categoryId-1]);
+    console.log(this.site.categories[categoryId-1].post_count);
+    this.postCount = this.site.categories[categoryId-1].post_count;
 
   }
 
