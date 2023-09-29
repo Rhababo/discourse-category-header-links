@@ -28,7 +28,7 @@ export default class CategoryStats extends Component {
   get links() {
     return this.categoryIds.reduce((result, item) => {
       let [
-        linkText = this.site.categories[item-1].name,
+        linkText = this.site.categories[item-1].name + (settings.showPostCount ? " ("+this.site.categories[item-1].post_count+")":""),
         linkTitle = this.site.categories[item-1].description_text,
         linkHref = this.site.categories[item-1].url,
         device = "vdo",
