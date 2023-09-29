@@ -5,7 +5,7 @@ import { dasherize } from "@ember/string";
 export default class CategoryStats extends Component {
   @service site
 
-  categoryIds = settings.category_ids.split("|");
+  categoryIds = settings.category_ids.split("|").map((s)=> parseInt(s));
 
   //code assumes that (category_Id - 1) is equal to their position in the site.categories array
   get shouldShow() {
