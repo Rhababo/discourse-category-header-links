@@ -24,7 +24,7 @@ export default class CategoryStats extends Component {
     return this.categoryIds.length < categoryId;
   }
 
-  get links() {
+  /*get links() {
     return this.categoryIds.reduce((result, item) => {
       let [
         linkText = this.site.categories[item].
@@ -59,7 +59,7 @@ export default class CategoryStats extends Component {
 
       return result;
     }, []);
-  }
+  }*/
 
 
 }
